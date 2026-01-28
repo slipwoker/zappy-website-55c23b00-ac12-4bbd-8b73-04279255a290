@@ -1,0 +1,1232 @@
+<!DOCTYPE html><html lang="he" dir="rtl"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - נדיר שירן</title>
+  <meta name="description" content="Services - נדיר שירן provides professional בריאות ורפואה משלימה services. Specializing in שיקום לאחר ניתוח אורתופדי.">
+  <meta name="keywords" content="שיקום לאחר ניתוח אורתופדי, פיזיותרפיסט מומחה ומומלץ בשרון, שיקום פציעות ספורט, פיזיותרפיה בתל מונד והסביבה">
+  <meta name="robots" content="index, follow">
+  
+  <meta property="og:title" content="Services - נדיר שירן">
+  <meta property="og:description" content="Services - נדיר שירן provides professional בריאות ורפואה משלימה services. Specializing in שיקום לאחר ניתוח אורתופדי.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Services - נדיר שירן">
+  <meta name="twitter:description" content="Services - נדיר שירן provides professional בריאות ורפואה משלימה services. Specializing in שיקום לאחר ניתוח אורתופדי.">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>
+/* Zappy Attribution Header Styles */
+.zappy-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 4px 19px 0px rgba(0,0,0,0.04);
+  padding: 16px 10px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 21px;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 21px;
+  direction: ltr !important;
+  unicode-bidi: isolate;
+}
+
+    .zappy-header p {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      white-space: nowrap;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-bottom: 0 !important;
+      direction: ltr !important;
+    }
+
+.zappy-header .zappy-link {
+  font-weight: 700;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.zappy-header .zappy-link:hover {
+  opacity: 0.7;
+}</style>
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    <!-- Mickidum Accessibility Toolbar -->
+    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+<!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: '55c23b00-ac12-4bbd-8b73-04279255a290',
+    apiUrl: 'https://api.zappy5.com/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+
+    <style id="zappy-dropdown-submenu-styles">
+      /* ========== DESKTOP DROPDOWN SUBMENU STYLES ========== */
+      /* Base styles for dropdown submenus - parent must be positioned */
+      .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) { position: relative; }
+      /* Submenu base - hidden by default */
+      .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu { display: block !important; position: absolute !important; top: 100%; left: 0; min-width: 220px; background: white; border-radius: 8px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); padding: 8px 0; opacity: 0; visibility: hidden; transform: translateY(10px); transition: all 0.3s ease; z-index: 1000; list-style: none; pointer-events: none; }
+      /* CRITICAL: Desktop hover styles to show dropdown */
+      .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu { opacity: 1 !important; visibility: visible !important; transform: translateY(0) !important; pointer-events: auto !important; }
+      /* Submenu item styling */
+      .sub-menu li { list-style: none; margin: 0; padding: 0; }
+      .sub-menu a { display: block !important; padding: 10px 16px !important; color: #333 !important; font-weight: 500; text-decoration: none; white-space: nowrap; transition: background-color 0.2s; }
+      .sub-menu a:hover { background-color: #f5f5f5; }
+      /* RTL (Hebrew/Arabic) dropdown positioning */
+      [dir="rtl"] .nav-menu .sub-menu, [dir="rtl"] nav .sub-menu, [dir="rtl"] .navbar .sub-menu, html[lang="he"] .nav-menu .sub-menu, html[lang="he"] nav .sub-menu, html[lang="he"] .navbar .sub-menu, html[lang="ar"] .nav-menu .sub-menu, html[lang="ar"] nav .sub-menu, html[lang="ar"] .navbar .sub-menu { left: auto !important; right: 0 !important; }
+      /* Hide empty dropdown menus */
+      .sub-menu:empty, .sub-menu:not(:has(li:not(.zappy-hidden-menu-item))), .sub-menu:not(:has(li)) { display: none !important; opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
+      /* Desktop: show submenu on Menu Group hover */
+      li:has(.menu-group-title):hover > .sub-menu { opacity: 1 !important; visibility: visible !important; transform: translateY(0) !important; pointer-events: auto !important; }
+      /* Menu Group title styling */
+      .nav-menu > li > .menu-group-title, #navMenu > li > .menu-group-title { display: inline-block; padding: 0.5rem 1rem; cursor: default; user-select: none; }
+      
+      /* ========== MOBILE SUBMENU STYLES ========== */
+      @media (max-width: 768px) {
+        .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu { position: static !important; transform: none !important; box-shadow: none !important; background: transparent !important; max-height: 0; overflow: hidden; opacity: 0; visibility: hidden; transition: max-height 0.3s ease, opacity 0.3s ease; padding: 0 !important; border-radius: 0 !important; }
+        .sub-menu.mobile-expanded { max-height: 500px !important; opacity: 1 !important; visibility: visible !important; padding: 8px 0 8px 16px !important; }
+        [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded { padding: 8px 16px 8px 0 !important; }
+        /* Disable hover behavior on mobile */
+        .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu { opacity: 0; visibility: hidden; pointer-events: none; }
+        .nav-menu li > .sub-menu.mobile-expanded, nav li > .sub-menu.mobile-expanded, .navbar li > .sub-menu.mobile-expanded, #navMenu li > .sub-menu.mobile-expanded { opacity: 1 !important; visibility: visible !important; pointer-events: auto !important; }
+        .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) { display: flex !important; flex-wrap: wrap !important; align-items: center !important; }
+        .nav-menu li:has(.sub-menu) > a, nav li:has(.sub-menu) > a, .navbar li:has(.sub-menu) > a, #navMenu li:has(.sub-menu) > a { flex: 1 !important; }
+        .nav-menu li:has(.sub-menu) > a [class*="chevron"], .nav-menu li:has(.sub-menu) > a [class*="arrow"], .nav-menu li:has(.sub-menu) > a .fa-chevron-down, .nav-menu li:has(.sub-menu) > a .fa-angle-down, nav li:has(.sub-menu) > a [class*="chevron"], nav li:has(.sub-menu) > a [class*="arrow"], #navMenu li:has(.sub-menu) > a [class*="chevron"], #navMenu li:has(.sub-menu) > a [class*="arrow"] { display: none !important; visibility: hidden !important; }
+        .mobile-submenu-toggle { display: flex !important; align-items: center !important; justify-content: center !important; width: 44px !important; height: 44px !important; background: transparent !important; border: none !important; cursor: pointer !important; }
+        .mobile-submenu-toggle::after { content: '' !important; width: 0 !important; height: 0 !important; border-left: 6px solid transparent !important; border-right: 6px solid transparent !important; border-top: 7px solid currentColor !important; transition: transform 0.3s ease !important; }
+        .mobile-submenu-toggle.expanded::after { transform: rotate(180deg) !important; }
+        .nav-menu li:has(.sub-menu) > .sub-menu, nav li:has(.sub-menu) > .sub-menu { flex-basis: 100% !important; width: 100% !important; }
+        .sub-menu a { padding: 10px 0 !important; display: block !important; }
+        .nav-menu li:has(.sub-menu) > .menu-group-title, nav li:has(.sub-menu) > .menu-group-title, .navbar li:has(.sub-menu) > .menu-group-title, #navMenu li:has(.sub-menu) > .menu-group-title { flex: 1 !important; }
+      }
+      @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
+    </style>
+</head>
+<body>
+
+<!-- Zappy Attribution Header -->
+<div id="zappy-attribution-header" class="zappy-header" style="display: none;">
+  <p>Happily created by&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" class="zappy-link">Zappy</a></p>
+</div>
+  <nav class="navbar" dir="rtl">
+  <button class="mobile-toggle" id="mobileToggle" aria-label="תפריט">
+    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+    </svg>
+    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
+      <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+    </svg>
+  </button>
+  
+  <button class="phone-header-btn" aria-label="התקשר">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+    </svg>
+  </button>
+  
+  <div class="nav-container">
+    <div class="nav-right-group"><div class="nav-brand">
+      <a href="/" class="logo-link">
+        <img src="/assets/logo.webp" alt="נדיר שירן" class="logo" />
+      </a>
+    </div><ul class="nav-menu" id="navMenu">
+      <li><a href="/services">שירותים</a></li>
+      <li><a href="/results">תוצאות</a></li>
+    </ul></div>
+    
+    
+    
+    <div class="nav-cta-container">
+      <a href="/contact" class="nav-cta-btn">צור קשר</a>
+    </div>
+  </div>
+</nav>
+<script>
+
+// Navbar Mobile Menu Toggle and Contrast Fix
+(function() {
+  // Use 'load' event instead of 'DOMContentLoaded' to ensure we run AFTER all other scripts
+  window.addEventListener('load', function() {
+    
+    // FIX MOBILE BUTTON CONTRAST
+    // Detect navbar background color and apply contrasting color to mobile buttons
+    const navbar = document.querySelector('.navbar, nav, header');
+    if (!navbar) {
+      console.log('[Navbar] Navbar element not found');
+      return;
+    }
+    
+    // DECLARE VARIABLES EARLY to avoid Temporal Dead Zone errors
+    // These are used in multiple places below
+    let mobileToggle = document.getElementById('mobileToggle') ||
+                       document.querySelector('.mobile-toggle') ||
+                       document.querySelector('.hamburger') ||
+                       document.querySelector('.hamburger-menu') ||
+                       document.querySelector('.menu-toggle') ||
+                       document.querySelector('.burger-menu') ||
+                       document.querySelector('[aria-label="Menu"]') ||
+                       document.querySelector('[aria-label="תפריט"]');
+    
+    const phoneBtn = document.querySelector('.phone-header-btn');
+    
+    const computedStyle = window.getComputedStyle(navbar);
+    let bgColor = computedStyle.backgroundColor;
+    
+    console.log('[Navbar] Initial navbar background:', bgColor);
+    
+    // Check if background is transparent or rgba with 0 alpha
+    const isTransparent = bgColor === 'transparent' || 
+                         bgColor === 'rgba(0, 0, 0, 0)' ||
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
+    
+    if (isTransparent) {
+      // Check for background-image or gradient
+      const bgImage = computedStyle.backgroundImage;
+      if (bgImage && bgImage !== 'none') {
+        console.log('[Navbar] Navbar has background image/gradient, using dark text');
+        bgColor = 'rgb(240, 240, 240)'; // Assume light background
+      } else {
+        // Transparent navbar - check body background
+        const bodyBg = window.getComputedStyle(document.body).backgroundColor;
+        console.log('[Navbar] Navbar transparent, using body background:', bodyBg);
+        bgColor = bodyBg;
+      }
+    }
+    
+    // Calculate luminance to determine if background is light or dark
+    const rgb = bgColor.match(/\d+/g);
+    if (rgb && rgb.length >= 3) {
+      const r = parseInt(rgb[0]);
+      const g = parseInt(rgb[1]);
+      const b = parseInt(rgb[2]);
+      const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+      
+      // Mobile button colors are set by Claude's AI-generated CSS (same as .nav-menu a)
+      // No dynamic color overrides needed - colors come from the generated navbar CSS
+      console.log('[Navbar] Mobile button colors preserved from Claude CSS (luminance:', luminance.toFixed(2) + ')');
+      
+      // FIX ICON SIZES - Ensure SVGs are properly sized and visible
+      // INJECT CRITICAL CSS TO OVERRIDE ANY CONFLICTING RULES
+      const criticalCSS = document.createElement('style');
+      criticalCSS.id = 'zappy-mobile-nav-fix';
+      const htmlLang = document.documentElement.lang || 'en';
+      const htmlDir = document.documentElement.dir || 'ltr';
+      // Check both dir attribute AND lang for RTL detection
+      // dir="rtl" is the most reliable indicator
+      const isRTL = htmlDir === 'rtl' || htmlLang === 'he' || htmlLang === 'ar';
+      
+      criticalCSS.textContent = `
+        /* Hide mobile buttons on desktop, show only on mobile */
+        @media (min-width: 769px) {
+          .mobile-toggle,
+          .phone-header-btn {
+            display: none !important;
+          }
+        }
+        
+        /* Show and position mobile buttons correctly on mobile */
+        @media (max-width: 768px) {
+          .mobile-toggle,
+          .phone-header-btn {
+            position: absolute !important;
+            top: 50% !important;
+            transform: translateY(-50%) !important;
+            z-index: 1001 !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 44px !important;
+            height: 44px !important;
+            border-radius: 50% !important;
+            border: none !important;
+            cursor: pointer !important;
+            padding: 8px !important;
+            background: none !important;
+            /* Color from Claude's CSS - don't override (same as .nav-menu a) */
+          }
+          
+          /* LTR positioning (default): hamburger LEFT, phone RIGHT */
+          html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .mobile-toggle,
+          html[dir="ltr"] .mobile-toggle {
+            left: 20px !important;
+            right: auto !important;
+          }
+          html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .phone-header-btn,
+          html[dir="ltr"] .phone-header-btn {
+            right: 20px !important;
+            left: auto !important;
+          }
+          
+          /* RTL positioning: hamburger RIGHT, phone LEFT */
+          html[dir="rtl"] .mobile-toggle,
+          html[lang="he"] .mobile-toggle,
+          html[lang="ar"] .mobile-toggle {
+            right: 20px !important;
+            left: auto !important;
+          }
+          html[dir="rtl"] .phone-header-btn,
+          html[lang="he"] .phone-header-btn,
+          html[lang="ar"] .phone-header-btn {
+            left: 20px !important;
+            right: auto !important;
+          }
+          
+          /* Ensure SVG icons are properly sized and inherit color */
+          .mobile-toggle svg,
+          .phone-header-btn svg {
+            width: 24px !important;
+            height: 24px !important;
+            /* Don't force display - let JavaScript control hamburger/close toggle */
+          }
+          
+          /* ===========================================
+             MOBILE LANGUAGE SWITCHER POSITIONING & COLOR
+             =========================================== */
+          .nav-cta-container {
+            display: flex !important;
+            position: absolute !important;
+            top: 50% !important;
+            transform: translateY(-50%) !important;
+            background: transparent !important;
+            width: auto !important;
+            z-index: 1001 !important;
+          }
+          
+          /* Hide CTA button on mobile */
+          .nav-cta-container .nav-cta-btn,
+          .nav-cta-container > a:not(.lang-option):not(.lang-switcher-current) {
+            display: none !important;
+          }
+          
+          /* LTR: language switcher near hamburger (left side) */
+          html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .nav-cta-container,
+          html[dir="ltr"] .nav-cta-container {
+            left: 30px !important;
+            right: auto !important;
+          }
+          
+          /* RTL: language switcher near hamburger (right side) */
+          html[dir="rtl"] .nav-cta-container,
+          html[lang="he"] .nav-cta-container,
+          html[lang="ar"] .nav-cta-container {
+            right: 30px !important;
+            left: auto !important;
+          }
+        }
+      `;
+      
+      // Remove existing fix if present and inject new one
+      const existing = document.getElementById('zappy-mobile-nav-fix');
+      if (existing) existing.remove();
+      document.head.appendChild(criticalCSS);
+      
+      console.log('[Navbar] Critical CSS injected for mobile nav positioning');
+      
+      // ONLY apply inline positioning styles on mobile viewport
+      // On desktop, the CSS handles hiding these buttons with display: none
+      // Inline styles were breaking desktop layout by overriding CSS
+      const isMobileViewport = window.innerWidth <= 768;
+      
+      if (mobileToggle) {
+        // Icon sizing applies to all viewports for consistency
+        const hamburgerIcon = mobileToggle.querySelector('.hamburger-icon');
+        const closeIcon = mobileToggle.querySelector('.close-icon');
+        
+        if (hamburgerIcon) {
+          hamburgerIcon.style.setProperty('width', '24px', 'important');
+          hamburgerIcon.style.setProperty('height', '24px', 'important');
+          hamburgerIcon.style.setProperty('display', 'block', 'important'); // Show hamburger by default
+        }
+        if (closeIcon) {
+          closeIcon.style.setProperty('width', '24px', 'important');
+          closeIcon.style.setProperty('height', '24px', 'important');
+          closeIcon.style.setProperty('display', 'none', 'important'); // Hide close icon by default
+        }
+        
+        // ONLY set positioning inline styles on mobile
+        if (isMobileViewport) {
+          mobileToggle.style.setProperty('position', 'absolute', 'important');
+          mobileToggle.style.setProperty('top', '50%', 'important');
+          mobileToggle.style.setProperty('transform', 'translateY(-50%)', 'important');
+          mobileToggle.style.setProperty('z-index', '1001', 'important');
+          
+          // Clear any inline left/right so CSS can take over based on html[dir]
+          mobileToggle.style.removeProperty('left');
+          mobileToggle.style.removeProperty('right');
+          
+          console.log('[Navbar] Mobile toggle positioning applied (mobile viewport)');
+        } else {
+          // On desktop, clear any positioning styles to let CSS handle it
+          mobileToggle.style.removeProperty('position');
+          mobileToggle.style.removeProperty('top');
+          mobileToggle.style.removeProperty('transform');
+          mobileToggle.style.removeProperty('z-index');
+          mobileToggle.style.removeProperty('left');
+          mobileToggle.style.removeProperty('right');
+          console.log('[Navbar] Desktop viewport - cleared mobile toggle inline positioning');
+        }
+      }
+      
+      if (phoneBtn) {
+        // Icon sizing applies to all viewports
+        const phoneIcon = phoneBtn.querySelector('svg');
+        if (phoneIcon) {
+          phoneIcon.style.width = '24px';
+          phoneIcon.style.height = '24px';
+          phoneIcon.setAttribute('width', '24');
+          phoneIcon.setAttribute('height', '24');
+        }
+        
+        // ONLY set positioning inline styles on mobile
+        if (isMobileViewport) {
+          phoneBtn.style.setProperty('position', 'absolute', 'important');
+          phoneBtn.style.setProperty('top', '50%', 'important');
+          phoneBtn.style.setProperty('transform', 'translateY(-50%)', 'important');
+          phoneBtn.style.setProperty('z-index', '1001', 'important');
+          
+          // Clear any inline left/right so CSS can take over based on html[dir]
+          phoneBtn.style.removeProperty('left');
+          phoneBtn.style.removeProperty('right');
+          
+          console.log('[Navbar] Phone button positioning applied (mobile viewport)');
+        } else {
+          // On desktop, clear any positioning styles to let CSS handle it
+          phoneBtn.style.removeProperty('position');
+          phoneBtn.style.removeProperty('top');
+          phoneBtn.style.removeProperty('transform');
+          phoneBtn.style.removeProperty('z-index');
+          phoneBtn.style.removeProperty('left');
+          phoneBtn.style.removeProperty('right');
+          console.log('[Navbar] Desktop viewport - cleared phone button inline positioning');
+        }
+      }
+    } else {
+      console.log('[Navbar] Could not parse background color:', bgColor);
+    }
+    
+    // MOBILE MENU TOGGLE
+    // Re-query in case DOM changed (mobileToggle already declared at top of function)
+    mobileToggle = document.getElementById('mobileToggle') ||
+                   document.querySelector('.mobile-toggle') ||
+                   document.querySelector('.hamburger') ||
+                   document.querySelector('.hamburger-menu') ||
+                   document.querySelector('.menu-toggle') ||
+                   document.querySelector('.burger-menu') ||
+                   document.querySelector('[aria-label="Menu"]') ||
+                   document.querySelector('[aria-label="תפריט"]');
+    
+    // EXPANDED SEARCH: Find nav menu by ID or class
+    const navMenu = document.getElementById('navMenu') ||
+                  document.querySelector('.nav-menu') ||
+                  document.querySelector('.nav-links') ||
+                  document.querySelector('nav ul:not(.submenu)');
+    
+    if (!mobileToggle || !navMenu) {
+      console.log('[Navbar] Mobile toggle or menu not found:', { toggle: !!mobileToggle, menu: !!navMenu });
+      return;
+    }
+    
+    // Ensure navMenu has ID for CSS targeting
+    if (!navMenu.id) {
+      navMenu.id = 'navMenu';
+    }
+    
+    console.log('[Navbar] Initializing mobile menu...');
+    
+    // Remove any existing event listeners by cloning the button
+    const newToggle = mobileToggle.cloneNode(true);
+    mobileToggle.parentNode.replaceChild(newToggle, mobileToggle);
+    
+    // Toggle menu on button click - use newToggle now
+    newToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      const hamburgerIcon = this.querySelector('.hamburger-icon');
+      const closeIcon = this.querySelector('.close-icon');
+      const isActive = navMenu.classList.contains('active');
+      
+      if (isActive) {
+        // Close menu
+        navMenu.classList.remove('active');
+        if (hamburgerIcon) hamburgerIcon.style.setProperty('display', 'block', 'important');
+        if (closeIcon) closeIcon.style.setProperty('display', 'none', 'important');
+        document.body.style.overflow = '';
+        console.log('[Navbar] Menu closed');
+      } else {
+        // Open menu
+        navMenu.classList.add('active');
+        if (hamburgerIcon) hamburgerIcon.style.setProperty('display', 'none', 'important');
+        if (closeIcon) closeIcon.style.setProperty('display', 'block', 'important');
+        document.body.style.overflow = 'hidden';
+        console.log('[Navbar] Menu opened');
+      }
+    });
+    
+    // Close menu when clicking nav links
+    const navLinks = navMenu.querySelectorAll('a');
+    navLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        const hamburgerIcon = newToggle.querySelector('.hamburger-icon');
+        const closeIcon = newToggle.querySelector('.close-icon');
+        
+        navMenu.classList.remove('active');
+        if (hamburgerIcon) hamburgerIcon.style.setProperty('display', 'block', 'important');
+        if (closeIcon) closeIcon.style.setProperty('display', 'none', 'important');
+        document.body.style.overflow = '';
+        console.log('[Navbar] Menu closed (link clicked)');
+      });
+    });
+    
+    // Phone button functionality (phoneBtn already declared at top of function)
+    if (phoneBtn) {
+      phoneBtn.addEventListener('click', function() {
+        // Get phone number from placeholder in page or use default
+        const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+        const phoneNumber = phoneLinks.length > 0 
+          ? phoneLinks[0].getAttribute('href').replace('tel:', '')
+          : '[business_phone]';
+        
+        window.location.href = 'tel:' + phoneNumber;
+        console.log('[Navbar] Phone button clicked');
+      });
+    }
+    
+    console.log('[Navbar] Mobile menu initialized successfully');
+    
+    // === WHATSAPP BUTTON VISIBILITY FIX ===
+    // Ensure WhatsApp floating button is hidden on desktop and visible on mobile
+    // IMPORTANT: Only target the floating button by its class, NOT generic wa.me links
+    const handleWhatsAppVisibility = function() {
+      const whatsappBtn = document.querySelector('.whatsapp-float');
+      if (whatsappBtn) {
+        const isDesktop = window.innerWidth >= 769;
+        if (isDesktop) {
+          whatsappBtn.style.setProperty('display', 'none', 'important');
+          whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
+          whatsappBtn.style.setProperty('opacity', '0', 'important');
+          whatsappBtn.style.setProperty('pointer-events', 'none', 'important');
+          console.log('[WhatsApp] Button hidden on desktop');
+        } else {
+          whatsappBtn.style.removeProperty('display');
+          whatsappBtn.style.removeProperty('visibility');
+          whatsappBtn.style.removeProperty('opacity');
+          whatsappBtn.style.removeProperty('pointer-events');
+          console.log('[WhatsApp] Button visible on mobile');
+        }
+      }
+    };
+    
+    // Run on load
+    handleWhatsAppVisibility();
+    
+    // Run on resize with debouncing
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(handleWhatsAppVisibility, 100);
+    });
+  });
+})();
+
+</script>
+
+  
+  <main>
+    <section class="services-hero-section" data-layout-spec="Services-hero">
+  <div class="hero-container">
+    <div class="hero-content">
+      <div class="signal-bars">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <h1>שירותים מעוצבים כמו פרוטוקול אימונים</h1>
+      <p class="hero-description">טיפול מובנה שמודד התקדמות ומתרגם לשגרות מעשיות. כל מפגש מתועד, כל תוכנית מותאמת, כל שלב נמדד כמו ביצועי שיא.</p>
+      <a href="#contact" class="btn-primary">דבר איתי על המטרה שלך</a>
+    </div>
+    <div class="hero-image-wrapper">
+      <div class="image-frame">
+        <img data-placeholder="services-hero-image-1" data-context="Professional sports therapist working with an athlete in a modern clinical setting. Hands-on treatment or guided movement therapy session. Clean, minimal background with natural lighting. Focus on precision and professionalism. Athletic performance rehabilitation context." width="600" height="700" src="/assets/site-services-image-1.webp" alt="טיפול מקצועי בספורטאים - נדיר שירן">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services-capabilities-section" data-layout-spec="Services-capabilities">
+  <div class="capabilities-container">
+    <div class="capabilities-header">
+      <h2>במה נוכל לעזור לך להשתפר</h2>
+      <p>תהליכי שיקום מותאמים אישית שמתמקדים בתוצאות מדידות ובשיפור מתמשך. כל תוכנית נבנית על בסיס הערכה מקצועית ומותאמת למטרות האישיות שלך.</p>
+    </div>
+    
+    <div class="capabilities-grid">
+      <article class="capability-card">
+        <div class="card-header">
+          <svg class="capability-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 4L18.5 14H28L20.5 20L23 30L16 24L9 30L11.5 20L4 14H13.5L16 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path>
+          </svg>
+          <h3>ניהול כאב</h3>
+        </div>
+        <p class="capability-description">טיפול ממוקד בהפחתת כאב כרוני ואקוטי באמצעות שילוב של טכניקות ידניות, תרגול מותאם ואימון תנועה תפקודית.</p>
+        <div class="capability-outcomes">
+          <div class="outcome-item">
+            <span class="outcome-label">בדיקת בסיס</span>
+            <p>מיפוי מדויק של מקורות הכאב והגורמים התורמים</p>
+          </div>
+          <div class="outcome-item">
+            <span class="outcome-label">נקודת ביקורת התקדמות</span>
+            <p>מעקב אחר שיפור ברמות הכאב והתפקוד היומיומי</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="capability-card">
+        <div class="card-header">
+          <svg class="capability-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="10" stroke="currentColor" stroke-width="2"></circle>
+            <path d="M16 6V16L22 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+          <h3>ניידות וטווח תנועה</h3>
+        </div>
+        <p class="capability-description">שיפור גמישות ומוביליות המפרקים לביצועים אופטימליים, עם דגש על איכות התנועה והשגת טווחי תנועה מלאים.</p>
+        <div class="capability-outcomes">
+          <div class="outcome-item">
+            <span class="outcome-label">בדיקת בסיס</span>
+            <p>הערכת טווחי תנועה ואיתור הגבלות תנועתיות</p>
+          </div>
+          <div class="outcome-item">
+            <span class="outcome-label">נקודת ביקורת התקדמות</span>
+            <p>מדידה אובייקטיבית של שיפור בניידות ובגמישות</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="capability-card">
+        <div class="card-header">
+          <svg class="capability-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="8" width="16" height="16" stroke="currentColor" stroke-width="2" rx="2"></rect>
+            <path d="M12 16L15 19L20 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <h3>יציבה ואיכות תנועה</h3>
+        </div>
+        <p class="capability-description">תיקון דפוסי תנועה לא אופטימליים ושיפור היציבה התפקודית, עם דגש על מניעת פציעות ושיפור ביצועים.</p>
+        <div class="capability-outcomes">
+          <div class="outcome-item">
+            <span class="outcome-label">בדיקת בסיס</span>
+            <p>ניתוח תנועתי ואיתור חוסרי איזון פוסטורליים</p>
+          </div>
+          <div class="outcome-item">
+            <span class="outcome-label">נקודת ביקורת התקדמות</span>
+            <p>הערכה מחדש של דפוסי תנועה ושיפור ביציבה</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="capability-card">
+        <div class="card-header">
+          <svg class="capability-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 16L12 10L18 14L26 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle cx="26" cy="6" r="2" fill="currentColor"></circle>
+          </svg>
+          <h3>חזרה לספורט</h3>
+        </div>
+        <p class="capability-description">שיקום לאחר פציעות ספורט והכנה לחזרה מלאה לפעילות ספורטיבית, עם דגש על מניעת פציעות חוזרות ושיפור ביצועים.</p>
+        <div class="capability-outcomes">
+          <div class="outcome-item">
+            <span class="outcome-label">בדיקת בסיס</span>
+            <p>הערכת מוכנות ספורטיבית ואיתור נקודות תורפה</p>
+          </div>
+          <div class="outcome-item">
+            <span class="outcome-label">נקודת ביקורת התקדמות</span>
+            <p>בדיקות ביצועים ספציפיות לספורט והערכת מוכנות</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="capability-card">
+        <div class="card-header">
+          <svg class="capability-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 4C9.4 4 4 9.4 4 16C4 22.6 9.4 28 16 28C22.6 28 28 22.6 28 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M16 8V16H24" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+          <h3>תמיכה בהתאוששות ולחץ</h3>
+        </div>
+        <p class="capability-description">כלים וטכניקות לשיפור ההתאוששות, הפחתת מתח גופני ונפשי, ושיפור איכות השינה והרגעה.</p>
+        <div class="capability-outcomes">
+          <div class="outcome-item">
+            <span class="outcome-label">בדיקת בסיס</span>
+            <p>הערכת רמות מתח, דפוסי שינה ואיכות התאוששות</p>
+          </div>
+          <div class="outcome-item">
+            <span class="outcome-label">נקודת ביקורת התקדמות</span>
+            <p>מעקב אחר שיפור בהתאוששות ורמות אנרגיה</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="capability-card">
+        <div class="card-header">
+          <svg class="capability-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="10" width="4" height="12" stroke="currentColor" stroke-width="2" rx="1"></rect>
+            <rect x="14" y="6" width="4" height="16" stroke="currentColor" stroke-width="2" rx="1"></rect>
+            <rect x="22" y="8" width="4" height="14" stroke="currentColor" stroke-width="2" rx="1"></rect>
+          </svg>
+          <h3>בניית שגרות מתמשכות</h3>
+        </div>
+        <p class="capability-description">פיתוח הרגלי תנועה ותרגול עצמאי לטווח ארוך, עם כלים למעקב עצמי ושמירה על השיפור לאורך זמן.</p>
+        <div class="capability-outcomes">
+          <div class="outcome-item">
+            <span class="outcome-label">בדיקת בסיס</span>
+            <p>הבנת הרגלים נוכחיים ובניית תוכנית מותאמת</p>
+          </div>
+          <div class="outcome-item">
+            <span class="outcome-label">נקודת ביקורת התקדמות</span>
+            <p>הערכת עמידה בשגרה ושיפור בעצמאות תפקודית</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="services-process-section" data-layout-spec="Services-process">
+  <div class="process-container">
+    <div class="process-header">
+      <div class="progress-indicator">
+        <div class="progress-segment filled"></div>
+        <div class="progress-segment filled"></div>
+        <div class="progress-segment filled"></div>
+        <div class="progress-segment filled"></div>
+      </div>
+      <h2>התהליך שלנו</h2>
+      <p class="process-intro">נקודות ביקורת ברורות מונעות ניחושים ומבטיחות שכל שלב מבוסס על מדידה אובייקטיבית של ההתקדמות שלך.</p>
+    </div>
+
+    <div class="timeline-wrapper">
+      <div class="timeline-line"></div>
+      
+      <div class="step-card step-start">
+        <div class="step-badge">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15M9 5C9 6.10457 9.89543 7 11 7H13C14.1046 7 15 6.10457 15 5M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5M12 12H15M12 16H15M9 12H9.01M9 16H9.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <span class="step-number">1</span>
+        </div>
+        <div class="step-content">
+          <h3>הערכה ומדידת בסיס</h3>
+          <p>בדיקה מקיפה של מצבך הנוכחי: טווחי תנועה, כוח, יציבות ודפוסי תנועה. מדידות אובייקטיביות שיוצרות נקודת התייחסות ברורה להתקדמות.</p>
+        </div>
+      </div>
+
+      <div class="step-card step-end">
+        <div class="step-badge">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15M9 5C9 6.10457 9.89543 7 11 7H13C14.1046 7 15 6.10457 15 5M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <span class="step-number">2</span>
+        </div>
+        <div class="step-content">
+          <h3>תכנית ועדיפויות</h3>
+          <p>בניית תוכנית טיפול מותאמת אישית המבוססת על הממצאים. קביעת יעדים ספציפיים, מדידים וזמנים - כולל אבני דרך ברורות לאורך הדרך.</p>
+        </div>
+      </div>
+
+      <div class="step-card step-start">
+        <div class="step-badge">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 10V3L4 14H11L11 21L20 10L13 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <span class="step-number">3</span>
+        </div>
+        <div class="step-content">
+          <h3>טיפולים ושגרת בית</h3>
+          <p>שילוב של טיפולים מקצועיים בקליניקה ותרגילים לביצוע עצמאי בבית. כל תרגיל מותאם לשלב הנוכחי שלך ומתקדם בהדרגה עם השיפור.</p>
+        </div>
+      </div>
+
+      <div class="step-card step-end">
+        <div class="step-badge">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <span class="step-number">4</span>
+        </div>
+        <div class="step-content">
+          <h3>בדיקה חוזרת ותחזוקה</h3>
+          <p>מדידות תקופתיות להשוואה עם הבסיס. הערכה אובייקטיבית של ההתקדמות ובניית תוכנית תחזוקה ארוכת טווח למניעת פציעות חוזרות.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services-faq-section" data-layout-spec="Services-faq">
+  <div class="faq-container">
+    <div class="faq-header">
+      <h2>שאלות נפוצות</h2>
+      <p>תשובות לשאלות שמטופלים שואלים לפני שהם מתחילים את התהליך. אם יש לך שאלה נוספת, אנחנו כאן בשבילך.</p>
+    </div>
+    
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h3>למי מתאימים הטיפולים?</h3>
+        <p>הטיפולים מותאמים לספורטאים מקצוענים וחובבים, אנשים לאחר ניתוח אורתופדי, ולכל מי שחווה כאבים או מגבלות תנועה. אנחנו עובדים עם אתלטים ברמה תחרותית, אנשים שחוזרים לפעילות אחרי פציעה, ומטופלים שמחפשים שיפור ביצועים או מניעת פציעות.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>מה לצפות בפגישה הראשונה?</h3>
+        <p>בפגישה הראשונה נבצע הערכה מקיפה: בדיקת תנועתיות, מדידת כוח ויציבות, וניתוח דפוסי תנועה. נגדיר יחד יעדים ברורים ונבנה תוכנית טיפול מותאמת אישית. הפגישה נמשכת כ-60 דקות וכוללת גם טיפול ראשוני.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>איך מודדים התקדמות?</h3>
+        <p>אנחנו עובדים עם מדדים אובייקטיביים: מדידת טווחי תנועה, בדיקות כוח, מבחני ביצועים פונקציונליים ותיעוד ויזואלי. כל טיפול מתועד, וכל 4-6 שבועות נבצע הערכה מחדש כדי לוודא שאנחנו על המסלול הנכון ולהתאים את התוכנית לפי הצורך.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>אפשר לעבוד גם מרחוק?</h3>
+        <p>כן. אנחנו מציעים ליווי אונליין לספורטאים שנמצאים מחוץ לאזור או בתקופות נסיעות. הליווי כולל הערכה וידאו, תוכנית אימונים מפורטת עם סרטוני הדרכה, ומעקב שוטף דרך אפליקציה. זה פתרון אידיאלי למי שצריך המשכיות גם כשהוא לא באזור.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>איך יודעים איזה מסלול טיפול מתאים?</h3>
+        <p>בפגישת ההיכרות הראשונה נעריך את המצב הנוכחי, היעדים שלך ואת לוח הזמנים. נמליץ על מסלול הטיפול המתאים - שיקום אחרי פציעה, שיפור ביצועים, או מניעה. אם יש ספק, תמיד אפשר להתחיל בפגישת הערכה בודדת ולהחליט אחר כך.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>עובדים גם עם אנשים שלא ספורטאים?</h3>
+        <p>בהחלט. למרות שהגישה שלנו מושפעת מעולם הספורט, אנחנו עובדים עם כל מי שרוצה לחזור לתפקוד מלא - בין אם זה חזרה לריצה פנאי, טיפוס מדרגות בלי כאב, או משחק עם הילדים. המטרה היא תמיד לחזור לעשות את מה שאתה אוהב.</p>
+      </div>
+    </div>
+    
+    <div class="faq-cta">
+      <a href="#contact" class="btn-primary">שאל את השאלה שלך</a>
+    </div>
+  </div>
+</section>
+
+<section class="services-cta-section" data-layout-spec="Services-cta">
+  <div class="services-cta-container">
+    <div class="services-cta-content-wrapper">
+      <div class="services-cta-panel">
+        <h2 class="services-cta-title">קבל תוכנית שאתה יכול לעקוב אחריה</h2>
+        <p class="services-cta-description">שתף את המגבלה הנוכחית שלך ואת התוצאה הרצויה. נבנה יחד תוכנית שיקום מדויקת המותאמת לצרכים שלך ולמטרות שלך.</p>
+        <a href="#contact" class="services-cta-button">
+          צור קשר עכשיו
+          <i class="fas fa-arrow-left" style="margin-inline-start: 8px; font-size: 0.875rem;"></i>
+        </a>
+      </div>
+    </div>
+    <div class="services-cta-vector">
+      <svg viewBox="0 0 200 400" xmlns="http://www.w3.org/2000/svg" class="services-cta-path-graphic">
+        <path d="M20,0 Q80,100 20,200 T20,400" stroke="currentColor" stroke-width="2" fill="none" opacity="0.3"></path>
+        <path d="M60,50 Q120,150 60,250 T60,400" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.2"></path>
+        <circle cx="20" cy="100" r="4" fill="var(--accent)" opacity="0.6"></circle>
+        <circle cx="60" cy="250" r="3" fill="var(--secondary)" opacity="0.5"></circle>
+      </svg>
+    </div>
+  </div>
+</section>
+  </main>
+  
+  <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-grid">
+      <div class="footer-column footer-about">
+        <img src="/assets/logo.webp" alt="נדיר שירן" class="logo" />
+        <p class="footer-description">מומחה לבריאות ורפואה משלימה, מציע טיפולים הוליסטיים ומותאמים אישית לשיפור הבריאות והרווחה.</p>
+      </div>
+      
+      <div class="footer-column footer-links">
+        <h3 class="footer-title">קישורים מהירים</h3>
+        <ul class="footer-menu">
+          <li><a href="/services">שירותים</a></li>
+          <li><a href="/results">תוצאות</a></li>
+          <li><a href="/contact">צור קשר</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column footer-contact">
+        <h3 class="footer-title">יצירת קשר</h3>
+        <ul class="contact-list">
+          <li>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:[business_email]">[business_email]</a>
+          </li>
+          <li>
+            <i class="fas fa-phone"></i>
+            <a href="tel:[business_phone]">[business_phone]</a>
+          </li>
+          <li><a href="/services"><i class="fas fa-map-marker-alt"></i>
+            <span>[business_address]</span></a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column footer-social">
+        <h3 class="footer-title">עקבו אחרינו</h3>
+        <div class="social-links">
+          <a href="[facebook_handle]" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="[instagram_handle]" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="[whatsapp_handle]" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="footer-legal">
+        <a href="/privacy">מדיניות פרטיות</a>
+        <span class="separator">|</span>
+        <a href="/terms">תנאים והגבלות</a>
+        <span class="separator">|</span>
+        <a href="/accessibility">הצהרת נגישות</a>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2026 נדיר שירן. כל הזכויות שמורות.</p>
+      </div>
+      <div class="footer-attribution">
+        <a href="https://zappy5.com" target="_blank" class="zappy-attribution">Generated by Zappy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+  <a href="https://wa.me/[whatsapp_handle]" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  
+  <script src="/script.js"></script>
+
+
+<!-- Zappy Attribution Header Script -->
+<script>
+(function() {
+  var websiteId = '55c23b00-ac12-4bbd-8b73-04279255a290';
+  
+  // Don't show header in preview mode
+  var currentUrl = window.location.href;
+  var isPreview = currentUrl.includes('/preview/') || 
+                  currentUrl.includes('/preview-fullscreen/') || 
+                  currentUrl.includes('localhost:5001') ||
+                  currentUrl.includes('localhost:3000');
+  
+  if (isPreview) {
+    return; // Exit early in preview mode
+  }
+  
+  fetch('https://api.zappy5.com/api/website/' + websiteId + '/tier')
+    .then(function(response) { return response.json(); })
+    .then(function(data) {
+      if (data.showAttribution) {
+        var header = document.getElementById('zappy-attribution-header');
+        if (header) {
+          // Use dynamic announcement content if available
+          if (data.announcement && data.announcement.html) {
+            header.innerHTML = data.announcement.html;
+          }
+          // Apply fixed positioning styles inline (works for existing sites too)
+          header.style.cssText = 'position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 99999 !important; display: flex !important; justify-content: center !important; align-items: center !important; text-align: center !important; box-sizing: border-box !important;';
+          // Fix child elements that might have position: fixed from old CSS
+          var children = header.querySelectorAll('*');
+          for (var i = 0; i < children.length; i++) {
+            children[i].style.position = 'static';
+          }
+          // Get header height
+          var headerHeight = header.offsetHeight;
+          // Find and fix navbar to be fixed as well (prevents gap at top of page)
+          var navSelectors = ['nav', '.navbar', '.nav'];
+          var navbar = null;
+          for (var j = 0; j < navSelectors.length; j++) {
+            navbar = document.querySelector(navSelectors[j]);
+            if (navbar && navbar.id !== 'zappy-attribution-header') break;
+            navbar = null;
+          }
+          if (navbar) {
+            var navbarHeight = navbar.offsetHeight;
+            navbar.style.cssText += '; position: fixed !important; top: ' + headerHeight + 'px !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 99998 !important;';
+            document.body.style.paddingTop = (headerHeight + navbarHeight) + 'px';
+          } else {
+            document.body.style.paddingTop = headerHeight + 'px';
+          }
+        }
+      }
+    })
+    .catch(function(error) {
+      console.error('Failed to check tier:', error);
+    });
+})();
+</script>
+    <div data-integration="accessibility:toolbar"></div>
+
+    <script id="zappy-mobile-submenu-script">
+    (function() {
+      function initMobileSubmenuToggles() {
+        if (window.innerWidth > 768) {
+          document.querySelectorAll('.mobile-submenu-toggle').forEach(function(btn) { btn.remove(); });
+          document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) { menu.classList.remove('mobile-expanded'); });
+          return;
+        }
+        var items = document.querySelectorAll('.nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu)');
+        items.forEach(function(li) {
+          if (li.querySelector('.mobile-submenu-toggle')) return;
+          var submenu = li.querySelector('.sub-menu');
+          var parentLink = li.querySelector(':scope > a');
+          if (!submenu || !parentLink) return;
+          var toggleBtn = document.createElement('button');
+          toggleBtn.className = 'mobile-submenu-toggle';
+          toggleBtn.setAttribute('aria-label', 'Toggle submenu');
+          toggleBtn.setAttribute('type', 'button');
+          parentLink.insertAdjacentElement('afterend', toggleBtn);
+          toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault(); e.stopPropagation();
+            document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) {
+              if (menu !== submenu) { menu.classList.remove('mobile-expanded'); var t = menu.parentElement.querySelector('.mobile-submenu-toggle'); if(t) t.classList.remove('expanded'); }
+            });
+            submenu.classList.toggle('mobile-expanded');
+            toggleBtn.classList.toggle('expanded');
+          });
+        });
+      }
+      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileSubmenuToggles); }
+      else { initMobileSubmenuToggles(); }
+      var resizeTimer; window.addEventListener('resize', function() { clearTimeout(resizeTimer); resizeTimer = setTimeout(initMobileSubmenuToggles, 250); });
+      // Re-initialize when mobile menu becomes visible (MutationObserver)
+      var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+          if (mutation.type === 'attributes') {
+            var target = mutation.target;
+            if (target.classList && (target.classList.contains('active') || target.classList.contains('open'))) {
+              setTimeout(initMobileSubmenuToggles, 100);
+            }
+          }
+        });
+      });
+      setTimeout(function() {
+        document.querySelectorAll('.mobile-menu, .nav-menu, #navMenu, nav').forEach(function(menu) {
+          observer.observe(menu, { attributes: true, attributeFilter: ['class', 'style'] });
+        });
+      }, 500);
+    })();
+    </script>
+</body></html>
