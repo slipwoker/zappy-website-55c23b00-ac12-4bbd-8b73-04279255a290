@@ -6925,6 +6925,12 @@ body.accessibility-widget-visible ._access-menu {
   grid-template-columns: var(--zappy-grid-cols, repeat(2, minmax(0, 1fr))) !important;
 }
 
+/* ZOOM WRAPPER: Ensure overflow:hidden for crop zoom effect */
+/* The wrapper clips the oversized image to create the zoom/crop effect */
+[data-zappy-zoom-wrapper="true"] {
+  overflow: hidden !important;
+}
+
 @media (max-width: 768px) {
   /* Auto-grid (AI-generated) grids - force single column on mobile */
   .zappy-preserve-css-grid[data-zappy-auto-grid="true"],
