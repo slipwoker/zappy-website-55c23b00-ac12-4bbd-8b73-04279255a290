@@ -1,4 +1,6 @@
-# Business — Generative Engine Optimization Map
+# נדיר שירן- פיזיותרפיה ואימוני כושר בתל מונד והסביבה — Generative Engine Optimization Map
+
+> A בריאות ורפואה משלימה business.
 
 ---
 
@@ -38,7 +40,15 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About Business
+## About נדיר שירן- פיזיותרפיה ואימוני כושר בתל מונד והסביבה
+נדיר שירן- פיזיותרפיה ואימוני כושר בתל מונד והסביבה is a business in the בריאות ורפואה משלימה industry.
+
+## Target Audience
+ספורטאים מקצוענים וחובבים, אנשים עם פציעות וכאבים המחפשים אוטוריטה
+
+## Industry
+בריאות ורפואה משלימה
+
 ---
 
 # Additional Resources
