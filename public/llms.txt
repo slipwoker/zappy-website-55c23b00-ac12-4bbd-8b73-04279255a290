@@ -1,47 +1,57 @@
-# Business — Generative Engine Optimization Map
+# נדיר שירן- פיזיותרפיה ואימוני כושר בתל מונד והסביבה — Generative Engine Optimization Map
+
+> A בריאות ורפואה משלימה business.
 
 ---
 
 ## Pages
 
 ### Home
-https://example.com
+https://nadir-shiran-physiotherapy-and.zappy5.app
 
 ### Services
-https://example.com/services
+https://nadir-shiran-physiotherapy-and.zappy5.app/services
 
 ### Results
-https://example.com/results
+https://nadir-shiran-physiotherapy-and.zappy5.app/results
 
 ### Contact
-https://example.com/contact
+https://nadir-shiran-physiotherapy-and.zappy5.app/contact
 
 ### Thank You | נדיר שירן – Physiotherapy & Performance Training
-https://example.com/thank-you
+https://nadir-shiran-physiotherapy-and.zappy5.app/thank-you
 נדיר שירן- פיזיותרפיה ואימוני כושר בתל מונד והסביבה - Thank You | נדיר שירן – Physiotherapy & Performance Training
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://example.com/privacy
+https://nadir-shiran-physiotherapy-and.zappy5.app/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://example.com/terms
+https://nadir-shiran-physiotherapy-and.zappy5.app/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://example.com/accessibility
+https://nadir-shiran-physiotherapy-and.zappy5.app/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
 
 # Business Context (for LLM understanding)
 
-## About Business
+## About נדיר שירן- פיזיותרפיה ואימוני כושר בתל מונד והסביבה
+נדיר שירן- פיזיותרפיה ואימוני כושר בתל מונד והסביבה is a business in the בריאות ורפואה משלימה industry.
+
+## Target Audience
+ספורטאים מקצוענים וחובבים, אנשים עם פציעות וכאבים המחפשים אוטוריטה
+
+## Industry
+בריאות ורפואה משלימה
+
 ---
 
 # Additional Resources
 
-- **Sitemap**: https://example.com/sitemap.xml
-- **Robots.txt**: https://example.com/robots.txt
+- **Sitemap**: https://nadir-shiran-physiotherapy-and.zappy5.app/sitemap.xml
+- **Robots.txt**: https://nadir-shiran-physiotherapy-and.zappy5.app/robots.txt
